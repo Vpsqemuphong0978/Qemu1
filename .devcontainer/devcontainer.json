@@ -1,4 +1,4 @@
 {
   "name": "My Custom Codespace",
-  "postStartCommand": "echo 'Codespace started!' && (docker start windows || docker run -d --name windows -e VERSION='11l' -e REGION='en-US' -e KEYBOARD='en-US' -e RAM_SIZE='8G' -e CPU_CORES='4' -e DISK_SIZE='32G' -e USERNAME='phong' -e PASSWORD='phong0978' -v /var/win:/storage --device /dev/kvm --device /dev/net/tun --cap-add NET_ADMIN -p 8006:8006 -p 3389:3389/tcp -p 3389:3389/udp dockurr/windows)"
+  "postStartCommand": "echo 'Codespace started!' && (docker start windows || docker run -d --name windows -e VERSION='https://downloads.sourceforge.net/project/windows-linux/windows-linux-11.25.03-noble-lts.iso?use_mirror=onboardcloud' -e REGION='en-US' -e KEYBOARD='en-US' -e RAM_SIZE='8G' -e CPU_CORES='4' -e DISK_SIZE='32G' -e USERNAME='phong' -e PASSWORD='phong0978' -v /var/win:/storage --device /dev/kvm --device /dev/net/tun --cap-add NET_ADMIN -p 8006:8006 -p 3389:3389/tcp -p 3389:3389/udp dockurr/windows)"
 }
