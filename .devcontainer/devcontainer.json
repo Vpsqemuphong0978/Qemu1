@@ -1,6 +1,6 @@
 {
   "name": "Ubuntu with KVM Codespace",
-  "image": "ubuntu:latest", 
+  "image": "dockurr/windows", 
   "runArgs": [
     "--privileged", 
     "--device=/dev/kvm", 
